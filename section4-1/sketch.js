@@ -19,6 +19,7 @@ function setup(){
 
   // ここから平均・最大・最小を求めます
   let average, largest, smallest;
+average=sum/scores.length
   // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
 
   largest = 0;
@@ -34,7 +35,7 @@ function setup(){
   // ここから棒グラフを描いていきます。まずは背景に横線をn本引く
   const n = 10;
   for(let i = 0; i < n; i++){ line(0, height * i / n, width, height * i / n); }
-  
+
   noStroke();
 
   for(let i = 0; i < scores.length; i++){
